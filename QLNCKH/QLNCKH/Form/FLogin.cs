@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
 namespace QLNCKH
 {
     public partial class FLogin : Form
@@ -37,19 +36,29 @@ namespace QLNCKH
                 try
                 {
                     conn.Open();
-                    string sql = "select * from Userr where username='"+user+"' and password='"+pass+"'";
+                    string sql = "select COUNT(*) from Userr where username='"+user+"' and password='"+pass+"'";
                     SqlCommand cmd = new SqlCommand(sql, conn);
-                    SqlDataAdapter com = new SqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    com.Fill(dt);
-                    foreach (DataRow row in dt.Rows)
+                    cmd.ExecuteNonQuery();
+                    int x = (int)cmd.ExecuteScalar();
+                    sql = "select username from Userr where username='" + user + "' and password='" + pass + "'";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+                    string a = (string)cmd.ExecuteScalar();
+                    sql = "select quyen from Userr where username='" + user + "' and password='" + pass + "'";
+                    cmd = new SqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+                    string quyen = (string)cmd.ExecuteScalar();
+                    if (x >= 1)
                     {
-                        if (user == row["user"] || pass == row["pass"])
-                        {
-                            MessageBox.Show("Complete");
-                            break;
-                        }
+                        MessageBox.Show("Đăng nhập thành công! Chào mừng "+a);
+                        Fmain f = new Fmain(quyen);
+                        this.Hide();
+                        f.ShowDialog();
+
                     }
+                    else
+                        MessageBox.Show("Đăng nhập thất bại!");
+                   
                 }
                 catch
                 {

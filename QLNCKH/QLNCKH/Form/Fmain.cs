@@ -12,7 +12,7 @@ namespace QLNCKH
 {
     public partial class Fmain : Form
     {
-        public Fmain()
+        public Fmain(string quyen)
         {
             InitializeComponent();
         }
