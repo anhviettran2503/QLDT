@@ -1,0 +1,10 @@
+D:\QLDT\QLNCKH\QLNCKH\bin\Debug\QLNCKH.exe.config
+D:\QLDT\QLNCKH\QLNCKH\bin\Debug\QLNCKH.exe
+D:\QLDT\QLNCKH\QLNCKH\bin\Debug\QLNCKH.pdb
+D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.csprojResolveAssemblyReference.cache
+D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FLogin.resources
+D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.Fmain.resources
+D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.Properties.Resources.resources
+D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.csproj.GenerateResource.Cache
+D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.exe
+D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.pdb
