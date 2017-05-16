@@ -51,7 +51,7 @@ namespace QLNCKH
                     if (x >= 1)
                     {
                         MessageBox.Show("Đăng nhập thành công! Chào mừng " + a);
-                        Fmain f = new Fmain(quyen);
+                        Fmain f = new Fmain(quyen,a);
                         this.Hide();
                         f.ShowDialog();
 
