@@ -50,14 +50,18 @@ namespace QLNCKH
                     string quyen = (string)cmd.ExecuteScalar();
                     if (x >= 1)
                     {
-                        MessageBox.Show("Đăng nhập thành công! Chào mừng "+a);
+                        MessageBox.Show("Đăng nhập thành công! Chào mừng " + a);
                         Fmain f = new Fmain(quyen);
                         this.Hide();
                         f.ShowDialog();
 
                     }
                     else
+                    {
                         MessageBox.Show("Đăng nhập thất bại!");
+                        txtPass.Text = "";
+                        txtUser.Text = "";
+                    }
                    
                 }
                 catch
@@ -69,6 +73,17 @@ namespace QLNCKH
                     conn.Close();
                 }
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FRegister f = new FRegister();
+            f.ShowDialog();
         }
     }
 }

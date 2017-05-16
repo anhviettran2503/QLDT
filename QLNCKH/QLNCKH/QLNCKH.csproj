@@ -47,25 +47,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB.cs" />
-    <Compile Include="Form\FLogin.cs">
+    <Compile Include="FLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\FLogin.Designer.cs">
+    <Compile Include="FLogin.Designer.cs">
       <DependentUpon>FLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form\Fmain.cs">
+    <Compile Include="Fmain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form\Fmain.Designer.cs">
+    <Compile Include="Fmain.Designer.cs">
       <DependentUpon>Fmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRegister.Designer.cs">
+      <DependentUpon>FRegister.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form\FLogin.resx">
+    <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form\Fmain.resx">
+    <EmbeddedResource Include="Fmain.resx">
       <DependentUpon>Fmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRegister.resx">
+      <DependentUpon>FRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
