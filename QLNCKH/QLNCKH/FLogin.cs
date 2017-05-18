@@ -61,6 +61,7 @@ namespace QLNCKH
                         MessageBox.Show("Đăng nhập thất bại!");
                         txtPass.Text = "";
                         txtUser.Text = "";
+                        this.ActiveControl = txtUser;
                     }
                    
                 }

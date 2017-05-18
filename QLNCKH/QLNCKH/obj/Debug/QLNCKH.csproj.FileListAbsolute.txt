@@ -10,3 +10,4 @@ D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.exe
 D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.pdb
 D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FRegister.resources
 D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FChangePass.resources
+D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.fKhoa.resources

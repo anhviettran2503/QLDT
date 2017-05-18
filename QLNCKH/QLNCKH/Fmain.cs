@@ -38,5 +38,22 @@ namespace QLNCKH
             FChangePass f = new FChangePass(this.name);
             f.ShowDialog();
         }
+
+        private void tìmKiếmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+           
+        }
+
+        private void danhMụcKhoaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fKhoa f = new fKhoa();
+            f.ShowDialog();
+        }
     }
 }

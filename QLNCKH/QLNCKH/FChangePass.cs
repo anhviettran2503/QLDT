@@ -26,11 +26,13 @@ namespace QLNCKH
             if (pass=="" || passnew=="" || repass=="")
             {
                 MessageBox.Show("Hãy nhập đầy đủ thông tin");
+                this.ActiveControl = txt_user;
             }
             else 
                 if (passnew!=repass)
             {
                 MessageBox.Show("Password xác nhận sai, hãy nhập lại");
+                this.ActiveControl = txt_passnew;
                 txt_repass.Text = "";
                 txt_passnew.Text = "";
             }

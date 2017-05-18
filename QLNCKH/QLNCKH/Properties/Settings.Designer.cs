@@ -32,5 +32,15 @@ namespace QLNCKH.Properties {
                 return ((string)(this["Conn"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ANHVIET\\DMSQL;Initial Catalog=QLDT;Integrated Security=True")]
+        public string QLDTConnectionString {
+            get {
+                return ((string)(this["QLDTConnectionString"]));
+            }
+        }
     }
 }
