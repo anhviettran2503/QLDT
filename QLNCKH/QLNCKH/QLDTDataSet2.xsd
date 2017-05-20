@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLDTDataSet2" targetNamespace="http://tempuri.org/QLDTDataSet2.xsd" xmlns:mstns="http://tempuri.org/QLDTDataSet2.xsd" xmlns="http://tempuri.org/QLDTDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLDTConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLDTConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QLNCKH.Properties.Settings.GlobalReference.Default.QLDTConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SinhvienTableAdapter" GeneratorDataComponentClassName="SinhvienTableAdapter" Name="Sinhvien" UserDataComponentName="SinhvienTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLDTConnectionString (Settings)" DbObjectName="QLDT.dbo.Sinhvien" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT malop FROM dbo.Sinhvien</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="malop" DataSetColumn="malop" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLDTDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLDTDataSet2" msprop:Generator_UserDSName="QLDTDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Sinhvien" msprop:Generator_TableClassName="SinhvienDataTable" msprop:Generator_TableVarName="tableSinhvien" msprop:Generator_TablePropName="Sinhvien" msprop:Generator_RowDeletingName="SinhvienRowDeleting" msprop:Generator_RowChangingName="SinhvienRowChanging" msprop:Generator_RowEvHandlerName="SinhvienRowChangeEventHandler" msprop:Generator_RowDeletedName="SinhvienRowDeleted" msprop:Generator_UserTableName="Sinhvien" msprop:Generator_RowChangedName="SinhvienRowChanged" msprop:Generator_RowEvArgName="SinhvienRowChangeEvent" msprop:Generator_RowClassName="SinhvienRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="malop" msprop:Generator_ColumnVarNameInTable="columnmalop" msprop:Generator_ColumnPropNameInRow="malop" msprop:Generator_ColumnPropNameInTable="malopColumn" msprop:Generator_UserColumnName="malop">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -55,5 +55,17 @@ namespace QLNCKH
             fKhoa f = new fKhoa();
             f.ShowDialog();
         }
+
+        private void danhMụcLớpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FLop f = new FLop();
+            f.ShowDialog();
+        }
+
+        private void danhMụcĐềTàiToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FSinhvien f = new FSinhvien();
+            f.ShowDialog();
+        }
     }
 }

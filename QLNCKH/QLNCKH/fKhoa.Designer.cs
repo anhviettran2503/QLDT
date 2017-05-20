@@ -42,11 +42,11 @@
             this.btnsua = new System.Windows.Forms.Button();
             this.btnhuy = new System.Windows.Forms.Button();
             this.txtmakhoa = new System.Windows.Forms.ComboBox();
-            this.qLDTDataSet = new QLNCKH.QLDTDataSet();
             this.khoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLDTDataSet = new QLNCKH.QLDTDataSet();
             this.khoaTableAdapter = new QLNCKH.QLDTDataSetTableAdapters.KhoaTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -137,6 +137,7 @@
             this.btnxoa.TabIndex = 6;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnsua
             // 
@@ -146,6 +147,7 @@
             this.btnsua.TabIndex = 7;
             this.btnsua.Text = "Sửa";
             this.btnsua.UseVisualStyleBackColor = true;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // btnhuy
             // 
@@ -155,6 +157,7 @@
             this.btnhuy.TabIndex = 8;
             this.btnhuy.Text = "Hủy";
             this.btnhuy.UseVisualStyleBackColor = true;
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // txtmakhoa
             // 
@@ -164,18 +167,18 @@
             this.txtmakhoa.Location = new System.Drawing.Point(385, 170);
             this.txtmakhoa.Name = "txtmakhoa";
             this.txtmakhoa.Size = new System.Drawing.Size(216, 32);
-            this.txtmakhoa.TabIndex = 9;
+            this.txtmakhoa.TabIndex = 1;
             this.txtmakhoa.ValueMember = "makhoa";
-            // 
-            // qLDTDataSet
-            // 
-            this.qLDTDataSet.DataSetName = "QLDTDataSet";
-            this.qLDTDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // khoaBindingSource
             // 
             this.khoaBindingSource.DataMember = "Khoa";
             this.khoaBindingSource.DataSource = this.qLDTDataSet;
+            // 
+            // qLDTDataSet
+            // 
+            this.qLDTDataSet.DataSetName = "QLDTDataSet";
+            this.qLDTDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // khoaTableAdapter
             // 
@@ -204,8 +207,8 @@
             this.Name = "fKhoa";
             this.Text = "Cập nhật danh mục Khoa";
             this.Load += new System.EventHandler(this.fKhoa_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
