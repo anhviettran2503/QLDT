@@ -109,6 +109,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDTDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLDTDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDTDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLDTDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDTDataSet4.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FChangePass.resx">
       <DependentUpon>FChangePass.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +190,28 @@
     </None>
     <None Include="QLDTDataSet2.xss">
       <DependentUpon>QLDTDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLDTDataSet3.xsc">
+      <DependentUpon>QLDTDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLDTDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDTDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDTDataSet3.xss">
+      <DependentUpon>QLDTDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLDTDataSet4.xsc">
+      <DependentUpon>QLDTDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLDTDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDTDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDTDataSet4.xss">
+      <DependentUpon>QLDTDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -58,8 +58,18 @@
             this.btnhuy = new System.Windows.Forms.Button();
             this.rbnam = new System.Windows.Forms.RadioButton();
             this.rbnu = new System.Windows.Forms.RadioButton();
+            this.qLDTDataSet3 = new QLNCKH.QLDTDataSet3();
+            this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lopTableAdapter = new QLNCKH.QLDTDataSet3TableAdapters.LopTableAdapter();
+            this.qLDTDataSet4 = new QLNCKH.QLDTDataSet4();
+            this.lopBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.lopTableAdapter1 = new QLNCKH.QLDTDataSet4TableAdapters.LopTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -164,7 +174,7 @@
             // 
             // cbmalop
             // 
-            this.cbmalop.DataSource = this.sinhvienBindingSource;
+            this.cbmalop.DataSource = this.lopBindingSource1;
             this.cbmalop.DisplayMember = "malop";
             this.cbmalop.FormattingEnabled = true;
             this.cbmalop.Location = new System.Drawing.Point(249, 119);
@@ -262,6 +272,7 @@
             this.btnxoa.TabIndex = 13;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnsua
             // 
@@ -271,6 +282,7 @@
             this.btnsua.TabIndex = 14;
             this.btnsua.Text = "Sửa";
             this.btnsua.UseVisualStyleBackColor = true;
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // btnhuy
             // 
@@ -302,6 +314,34 @@
             this.rbnu.TabStop = true;
             this.rbnu.Text = "Nữ";
             this.rbnu.UseVisualStyleBackColor = true;
+            // 
+            // qLDTDataSet3
+            // 
+            this.qLDTDataSet3.DataSetName = "QLDTDataSet3";
+            this.qLDTDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lopBindingSource
+            // 
+            this.lopBindingSource.DataMember = "Lop";
+            this.lopBindingSource.DataSource = this.qLDTDataSet3;
+            // 
+            // lopTableAdapter
+            // 
+            this.lopTableAdapter.ClearBeforeFill = true;
+            // 
+            // qLDTDataSet4
+            // 
+            this.qLDTDataSet4.DataSetName = "QLDTDataSet4";
+            this.qLDTDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // lopBindingSource1
+            // 
+            this.lopBindingSource1.DataMember = "Lop";
+            this.lopBindingSource1.DataSource = this.qLDTDataSet4;
+            // 
+            // lopTableAdapter1
+            // 
+            this.lopTableAdapter1.ClearBeforeFill = true;
             // 
             // FSinhvien
             // 
@@ -341,6 +381,10 @@
             this.Load += new System.EventHandler(this.FSinhvien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,5 +421,11 @@
         private System.Windows.Forms.Button btnhuy;
         private System.Windows.Forms.RadioButton rbnam;
         private System.Windows.Forms.RadioButton rbnu;
+        private QLDTDataSet3 qLDTDataSet3;
+        private System.Windows.Forms.BindingSource lopBindingSource;
+        private QLDTDataSet3TableAdapters.LopTableAdapter lopTableAdapter;
+        private QLDTDataSet4 qLDTDataSet4;
+        private System.Windows.Forms.BindingSource lopBindingSource1;
+        private QLDTDataSet4TableAdapters.LopTableAdapter lopTableAdapter1;
     }
 }
