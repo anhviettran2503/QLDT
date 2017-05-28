@@ -40,11 +40,11 @@
             this.btnsua = new System.Windows.Forms.Button();
             this.btnhuy = new System.Windows.Forms.Button();
             this.cbmakhoa = new System.Windows.Forms.ComboBox();
-            this.qLDTDataSet1 = new QLNCKH.QLDTDataSet1();
             this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLDTDataSet1 = new QLNCKH.QLDTDataSet1();
             this.lopTableAdapter = new QLNCKH.QLDTDataSet1TableAdapters.LopTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -100,31 +100,37 @@
             // 
             // btnthem
             // 
-            this.btnthem.Location = new System.Drawing.Point(166, 334);
+            this.btnthem.Image = global::QLNCKH.Properties.Resources.add_icon2;
+            this.btnthem.Location = new System.Drawing.Point(171, 334);
             this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(92, 51);
+            this.btnthem.Size = new System.Drawing.Size(87, 51);
             this.btnthem.TabIndex = 4;
             this.btnthem.Text = "Thêm";
+            this.btnthem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnthem.UseVisualStyleBackColor = true;
             this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // btnxoa
             // 
+            this.btnxoa.Image = global::QLNCKH.Properties.Resources.icon_autosuggest_delete;
             this.btnxoa.Location = new System.Drawing.Point(264, 334);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(92, 51);
             this.btnxoa.TabIndex = 5;
             this.btnxoa.Text = "Xóa";
+            this.btnxoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnxoa.UseVisualStyleBackColor = true;
             this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnsua
             // 
+            this.btnsua.Image = global::QLNCKH.Properties.Resources.refresh;
             this.btnsua.Location = new System.Drawing.Point(362, 334);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(92, 51);
             this.btnsua.TabIndex = 6;
             this.btnsua.Text = "Sửa";
+            this.btnsua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnsua.UseVisualStyleBackColor = true;
             this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
@@ -149,15 +155,15 @@
             this.cbmakhoa.TabIndex = 1;
             this.cbmakhoa.ValueMember = "makhoa";
             // 
-            // qLDTDataSet1
-            // 
-            this.qLDTDataSet1.DataSetName = "QLDTDataSet1";
-            this.qLDTDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // lopBindingSource
             // 
             this.lopBindingSource.DataMember = "Lop";
             this.lopBindingSource.DataSource = this.qLDTDataSet1;
+            // 
+            // qLDTDataSet1
+            // 
+            this.qLDTDataSet1.DataSetName = "QLDTDataSet1";
+            this.qLDTDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lopTableAdapter
             // 
@@ -180,12 +186,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FLop";
             this.Text = "Cập Nhập Danh Mục Lớp";
             this.Load += new System.EventHandler(this.FLop_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,3 +13,4 @@ D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FChangePass.resources
 D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.fKhoa.resources
 D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FLop.resources
 D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FSinhvien.resources
+D:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.Fgiangvien.resources

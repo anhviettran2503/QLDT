@@ -53,6 +53,18 @@
     <Compile Include="FChangePass.Designer.cs">
       <DependentUpon>FChangePass.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fdetai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fdetai.Designer.cs">
+      <DependentUpon>Fdetai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fgiangvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fgiangvien.Designer.cs">
+      <DependentUpon>Fgiangvien.cs</DependentUpon>
+    </Compile>
     <Compile Include="fKhoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,8 +131,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDTDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLDTDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDTDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLDTDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDTDataSet6.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FChangePass.resx">
       <DependentUpon>FChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fdetai.resx">
+      <DependentUpon>Fdetai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fgiangvien.resx">
+      <DependentUpon>Fgiangvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fKhoa.resx">
       <DependentUpon>fKhoa.cs</DependentUpon>
@@ -148,6 +176,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -213,9 +242,49 @@
     <None Include="QLDTDataSet4.xss">
       <DependentUpon>QLDTDataSet4.xsd</DependentUpon>
     </None>
+    <None Include="QLDTDataSet5.xsc">
+      <DependentUpon>QLDTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLDTDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDTDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDTDataSet5.xss">
+      <DependentUpon>QLDTDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLDTDataSet6.xsc">
+      <DependentUpon>QLDTDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QLDTDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDTDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDTDataSet6.xss">
+      <DependentUpon>QLDTDataSet6.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon--ikons-icons--softiconsm-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_autosuggest_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

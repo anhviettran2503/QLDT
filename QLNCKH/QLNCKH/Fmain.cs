@@ -46,7 +46,11 @@ namespace QLNCKH
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult drl = MessageBox.Show("Bạn muốn thoát chương trình ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (drl== DialogResult.Yes)
+            {
+                Application.Exit();
+            }
            
         }
 
@@ -66,6 +70,35 @@ namespace QLNCKH
         {
             FSinhvien f = new FSinhvien();
             f.ShowDialog();
+        }
+
+        private void danhMụcGiảngViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Fgiangvien f = new Fgiangvien();
+            f.ShowDialog();
+        }
+
+        private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FLogin f = new FLogin();
+            f.ShowDialog();
+        }
+
+        private void Fmain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult drl = MessageBox.Show("Bạn muốn thoát chương trình ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (drl == DialogResult.No)
+            {
+                e.Cancel=true;
+               
+            }
+            
+        }
+
+        private void danhMụcĐềTàiToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
