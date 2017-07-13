@@ -41,6 +41,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.cbmalop = new System.Windows.Forms.ComboBox();
+            this.lopBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLNCKHDataSet3 = new QLNCKH.QLNCKHDataSet3();
             this.lopBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.qLDTDataSet4 = new QLNCKH.QLDTDataSet4();
             this.sinhvienBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -65,9 +67,6 @@
             this.lopTableAdapter = new QLNCKH.QLDTDataSet3TableAdapters.LopTableAdapter();
             this.lopTableAdapter1 = new QLNCKH.QLDTDataSet4TableAdapters.LopTableAdapter();
             this.datatable = new System.Windows.Forms.DataGridView();
-            this.sinhvienBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.qLDTDataSet5 = new QLNCKH.QLDTDataSet5();
-            this.sinhvienTableAdapter1 = new QLNCKH.QLDTDataSet5TableAdapters.SinhvienTableAdapter();
             this.masvDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tensvDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.malopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,6 +77,15 @@
             this.tentkDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.diachiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sinhvienBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLNCKHDataSet2 = new QLNCKH.QLNCKHDataSet2();
+            this.sinhvienBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.qLDTDataSet5 = new QLNCKH.QLDTDataSet5();
+            this.sinhvienTableAdapter1 = new QLNCKH.QLDTDataSet5TableAdapters.SinhvienTableAdapter();
+            this.sinhvienTableAdapter2 = new QLNCKH.QLNCKHDataSet2TableAdapters.SinhvienTableAdapter();
+            this.lopTableAdapter2 = new QLNCKH.QLNCKHDataSet3TableAdapters.LopTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNCKHDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).BeginInit();
@@ -85,6 +93,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.datatable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNCKHDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet5)).BeginInit();
             this.SuspendLayout();
@@ -191,7 +201,7 @@
             // 
             // cbmalop
             // 
-            this.cbmalop.DataSource = this.lopBindingSource1;
+            this.cbmalop.DataSource = this.lopBindingSource2;
             this.cbmalop.DisplayMember = "malop";
             this.cbmalop.FormattingEnabled = true;
             this.cbmalop.Location = new System.Drawing.Point(339, 88);
@@ -199,6 +209,16 @@
             this.cbmalop.Size = new System.Drawing.Size(195, 32);
             this.cbmalop.TabIndex = 1;
             this.cbmalop.ValueMember = "malop";
+            // 
+            // lopBindingSource2
+            // 
+            this.lopBindingSource2.DataMember = "Lop";
+            this.lopBindingSource2.DataSource = this.qLNCKHDataSet3;
+            // 
+            // qLNCKHDataSet3
+            // 
+            this.qLNCKHDataSet3.DataSetName = "QLNCKHDataSet3";
+            this.qLNCKHDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lopBindingSource1
             // 
@@ -319,6 +339,7 @@
             this.btnhuy.TabIndex = 15;
             this.btnhuy.Text = " Hủy";
             this.btnhuy.UseVisualStyleBackColor = true;
+            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
             // 
             // rbnam
             // 
@@ -375,26 +396,12 @@
             this.tentkDataGridViewTextBoxColumn,
             this.diachiDataGridViewTextBoxColumn,
             this.emailDataGridViewTextBoxColumn});
-            this.datatable.DataSource = this.sinhvienBindingSource1;
+            this.datatable.DataSource = this.sinhvienBindingSource2;
             this.datatable.Location = new System.Drawing.Point(0, 364);
             this.datatable.Name = "datatable";
             this.datatable.Size = new System.Drawing.Size(1151, 388);
             this.datatable.TabIndex = 16;
             this.datatable.Click += new System.EventHandler(this.datatable_Click);
-            // 
-            // sinhvienBindingSource1
-            // 
-            this.sinhvienBindingSource1.DataMember = "Sinhvien";
-            this.sinhvienBindingSource1.DataSource = this.qLDTDataSet5;
-            // 
-            // qLDTDataSet5
-            // 
-            this.qLDTDataSet5.DataSetName = "QLDTDataSet5";
-            this.qLDTDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sinhvienTableAdapter1
-            // 
-            this.sinhvienTableAdapter1.ClearBeforeFill = true;
             // 
             // masvDataGridViewTextBoxColumn
             // 
@@ -460,11 +467,43 @@
             this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
             this.emailDataGridViewTextBoxColumn.Width = 130;
             // 
+            // sinhvienBindingSource2
+            // 
+            this.sinhvienBindingSource2.DataMember = "Sinhvien";
+            this.sinhvienBindingSource2.DataSource = this.qLNCKHDataSet2;
+            // 
+            // qLNCKHDataSet2
+            // 
+            this.qLNCKHDataSet2.DataSetName = "QLNCKHDataSet2";
+            this.qLNCKHDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sinhvienBindingSource1
+            // 
+            this.sinhvienBindingSource1.DataMember = "Sinhvien";
+            this.sinhvienBindingSource1.DataSource = this.qLDTDataSet5;
+            // 
+            // qLDTDataSet5
+            // 
+            this.qLDTDataSet5.DataSetName = "QLDTDataSet5";
+            this.qLDTDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sinhvienTableAdapter1
+            // 
+            this.sinhvienTableAdapter1.ClearBeforeFill = true;
+            // 
+            // sinhvienTableAdapter2
+            // 
+            this.sinhvienTableAdapter2.ClearBeforeFill = true;
+            // 
+            // lopTableAdapter2
+            // 
+            this.lopTableAdapter2.ClearBeforeFill = true;
+            // 
             // FSinhvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 747);
+            this.ClientSize = new System.Drawing.Size(1151, 741);
             this.Controls.Add(this.datatable);
             this.Controls.Add(this.rbnu);
             this.Controls.Add(this.rbnam);
@@ -497,6 +536,8 @@
             this.Name = "FSinhvien";
             this.Text = "Cập Nhật Danh Mục Sinh Viên";
             this.Load += new System.EventHandler(this.FSinhvien_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNCKHDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource)).EndInit();
@@ -504,6 +545,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.datatable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNCKHDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sinhvienBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet5)).EndInit();
             this.ResumeLayout(false);
@@ -562,5 +605,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tentkDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn diachiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private QLNCKHDataSet2 qLNCKHDataSet2;
+        private System.Windows.Forms.BindingSource sinhvienBindingSource2;
+        private QLNCKHDataSet2TableAdapters.SinhvienTableAdapter sinhvienTableAdapter2;
+        private QLNCKHDataSet3 qLNCKHDataSet3;
+        private System.Windows.Forms.BindingSource lopBindingSource2;
+        private QLNCKHDataSet3TableAdapters.LopTableAdapter lopTableAdapter2;
     }
 }

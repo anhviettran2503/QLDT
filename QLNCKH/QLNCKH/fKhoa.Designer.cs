@@ -1,6 +1,6 @@
 ﻿namespace QLNCKH
 {
-    partial class fKhoa
+    partial class FKhoa
     {
         /// <summary>
         /// Required designer variable.
@@ -45,8 +45,13 @@
             this.khoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLDTDataSet = new QLNCKH.QLDTDataSet();
             this.khoaTableAdapter = new QLNCKH.QLDTDataSetTableAdapters.KhoaTableAdapter();
+            this.qLNCKHDataSet = new QLNCKH.QLNCKHDataSet();
+            this.khoaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.khoaTableAdapter1 = new QLNCKH.QLNCKHDataSetTableAdapters.KhoaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNCKHDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -161,7 +166,7 @@
             // 
             // txtmakhoa
             // 
-            this.txtmakhoa.DataSource = this.khoaBindingSource;
+            this.txtmakhoa.DataSource = this.khoaBindingSource1;
             this.txtmakhoa.DisplayMember = "makhoa";
             this.txtmakhoa.FormattingEnabled = true;
             this.txtmakhoa.Location = new System.Drawing.Point(385, 170);
@@ -184,7 +189,21 @@
             // 
             this.khoaTableAdapter.ClearBeforeFill = true;
             // 
-            // fKhoa
+            // qLNCKHDataSet
+            // 
+            this.qLNCKHDataSet.DataSetName = "QLNCKHDataSet";
+            this.qLNCKHDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // khoaBindingSource1
+            // 
+            this.khoaBindingSource1.DataMember = "Khoa";
+            this.khoaBindingSource1.DataSource = this.qLNCKHDataSet;
+            // 
+            // khoaTableAdapter1
+            // 
+            this.khoaTableAdapter1.ClearBeforeFill = true;
+            // 
+            // FKhoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -204,11 +223,13 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "fKhoa";
+            this.Name = "FKhoa";
             this.Text = "Cập nhật danh mục Khoa";
             this.Load += new System.EventHandler(this.fKhoa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNCKHDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +253,8 @@
         private QLDTDataSet qLDTDataSet;
         private System.Windows.Forms.BindingSource khoaBindingSource;
         private QLDTDataSetTableAdapters.KhoaTableAdapter khoaTableAdapter;
+        private QLNCKHDataSet qLNCKHDataSet;
+        private System.Windows.Forms.BindingSource khoaBindingSource1;
+        private QLNCKHDataSetTableAdapters.KhoaTableAdapter khoaTableAdapter1;
     }
 }

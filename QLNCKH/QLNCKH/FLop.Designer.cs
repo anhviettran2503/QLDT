@@ -43,8 +43,13 @@
             this.lopBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLDTDataSet1 = new QLNCKH.QLDTDataSet1();
             this.lopTableAdapter = new QLNCKH.QLDTDataSet1TableAdapters.LopTableAdapter();
+            this.qLNCKHDataSet1 = new QLNCKH.QLNCKHDataSet1();
+            this.khoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.khoaTableAdapter = new QLNCKH.QLNCKHDataSet1TableAdapters.KhoaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNCKHDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -146,7 +151,7 @@
             // 
             // cbmakhoa
             // 
-            this.cbmakhoa.DataSource = this.lopBindingSource;
+            this.cbmakhoa.DataSource = this.khoaBindingSource;
             this.cbmakhoa.DisplayMember = "makhoa";
             this.cbmakhoa.FormattingEnabled = true;
             this.cbmakhoa.Location = new System.Drawing.Point(302, 167);
@@ -168,6 +173,20 @@
             // lopTableAdapter
             // 
             this.lopTableAdapter.ClearBeforeFill = true;
+            // 
+            // qLNCKHDataSet1
+            // 
+            this.qLNCKHDataSet1.DataSetName = "QLNCKHDataSet1";
+            this.qLNCKHDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // khoaBindingSource
+            // 
+            this.khoaBindingSource.DataMember = "Khoa";
+            this.khoaBindingSource.DataSource = this.qLNCKHDataSet1;
+            // 
+            // khoaTableAdapter
+            // 
+            this.khoaTableAdapter.ClearBeforeFill = true;
             // 
             // FLop
             // 
@@ -192,6 +211,8 @@
             this.Load += new System.EventHandler(this.FLop_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lopBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLDTDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLNCKHDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.khoaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,5 +234,8 @@
         private QLDTDataSet1 qLDTDataSet1;
         private System.Windows.Forms.BindingSource lopBindingSource;
         private QLDTDataSet1TableAdapters.LopTableAdapter lopTableAdapter;
+        private QLNCKHDataSet1 qLNCKHDataSet1;
+        private System.Windows.Forms.BindingSource khoaBindingSource;
+        private QLNCKHDataSet1TableAdapters.KhoaTableAdapter khoaTableAdapter;
     }
 }

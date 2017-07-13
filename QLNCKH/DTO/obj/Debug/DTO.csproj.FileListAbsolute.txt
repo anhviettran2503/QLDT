@@ -1,0 +1,5 @@
+C:\Users\asus\Desktop\Github\QLNCKH\DTO\bin\Debug\DTO.dll
+C:\Users\asus\Desktop\Github\QLNCKH\DTO\bin\Debug\DTO.pdb
+C:\Users\asus\Desktop\Github\QLNCKH\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\Github\QLNCKH\DTO\obj\Debug\DTO.dll
+C:\Users\asus\Desktop\Github\QLNCKH\DTO\obj\Debug\DTO.pdb

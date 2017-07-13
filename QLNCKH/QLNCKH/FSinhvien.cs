@@ -19,14 +19,12 @@ namespace QLNCKH
 
         private void FSinhvien_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qLDTDataSet5.Sinhvien' table. You can move, or remove it, as needed.
-            this.sinhvienTableAdapter1.Fill(this.qLDTDataSet5.Sinhvien);
-            // TODO: This line of code loads data into the 'qLDTDataSet4.Lop' table. You can move, or remove it, as needed.
-            this.lopTableAdapter1.Fill(this.qLDTDataSet4.Lop);
-            // TODO: This line of code loads data into the 'qLDTDataSet3.Lop' table. You can move, or remove it, as needed.
-            this.lopTableAdapter.Fill(this.qLDTDataSet3.Lop);
-            // TODO: This line of code loads data into the 'qLDTDataSet2.Sinhvien' table. You can move, or remove it, as needed.
-            this.sinhvienTableAdapter.Fill(this.qLDTDataSet2.Sinhvien);
+            // TODO: This line of code loads data into the 'qLNCKHDataSet3.Lop' table. You can move, or remove it, as needed.
+            this.lopTableAdapter2.Fill(this.qLNCKHDataSet3.Lop);
+            // TODO: This line of code loads data into the 'qLNCKHDataSet2.Sinhvien' table. You can move, or remove it, as needed.
+            this.sinhvienTableAdapter2.Fill(this.qLNCKHDataSet2.Sinhvien);
+          
+            
             rbnam.Checked = true;
             txtngaysinh.Value = new DateTime(1990, 01, 01);
             datatable.AutoResizeColumns();
@@ -149,6 +147,11 @@ namespace QLNCKH
             txtuser.Text = datatable.Rows[index].Cells[7].Value.ToString();
             txtdiachi.Text = datatable.Rows[index].Cells[8].Value.ToString();
             txtemail.Text = datatable.Rows[index].Cells[9].Value.ToString();
+        }
+
+        private void btnhuy_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

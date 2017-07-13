@@ -13,8 +13,8 @@ namespace QLNCKH
 
         public static SqlConnection GetDBConnection()
         {
-            string datasource = @"ANHVIET\DMSQL";
-            string database = "QLDT";
+            string datasource = @"DESKTOP-BD23O87\SQLEXPRESS";
+            string database = "QLNCKH";
             string connString = @"Data Source=" + datasource + ";Initial Catalog=" + database +"; Integrated Security = True";
             SqlConnection conn = new SqlConnection(connString);
             return conn;

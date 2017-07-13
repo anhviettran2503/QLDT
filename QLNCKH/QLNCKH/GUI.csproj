@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,7 +53,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DB.cs" />
+    <Compile Include="FCapNhatTienDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCapNhatTienDo.Designer.cs">
+      <DependentUpon>FCapNhatTienDo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,11 +84,11 @@
     <Compile Include="Fgiangvien.Designer.cs">
       <DependentUpon>Fgiangvien.cs</DependentUpon>
     </Compile>
-    <Compile Include="fKhoa.cs">
+    <Compile Include="FKhoa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="fKhoa.Designer.cs">
-      <DependentUpon>fKhoa.cs</DependentUpon>
+    <Compile Include="FKhoa.Designer.cs">
+      <DependentUpon>FKhoa.cs</DependentUpon>
     </Compile>
     <Compile Include="FLogin.cs">
       <SubType>Form</SubType>
@@ -89,6 +108,18 @@
     <Compile Include="Fmain.Designer.cs">
       <DependentUpon>Fmain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FNghiemThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNghiemThu.Designer.cs">
+      <DependentUpon>FNghiemThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDetai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetai.Designer.cs">
+      <DependentUpon>FormDetai.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,8 +132,17 @@
     <Compile Include="FSinhvien.Designer.cs">
       <DependentUpon>FSinhvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="FTimKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTimKiem.Designer.cs">
+      <DependentUpon>FTimKiem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDTDataSet.cs">
+      <DependentUpon>QLDTDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QLDTDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -141,6 +181,50 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDTDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLDTDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLDTDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNCKHDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNCKHDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNCKHDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNCKHDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNCKHDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNCKHDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLNCKHDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLNCKHDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportNT.Designer.cs">
+      <DependentUpon>ReportNT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RPNghiemthu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RPNghiemthu.Designer.cs">
+      <DependentUpon>RPNghiemthu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCapNhatTienDo.resx">
+      <DependentUpon>FCapNhatTienDo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FChangePass.resx">
       <DependentUpon>FChangePass.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,8 +234,8 @@
     <EmbeddedResource Include="Fgiangvien.resx">
       <DependentUpon>Fgiangvien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="fKhoa.resx">
-      <DependentUpon>fKhoa.cs</DependentUpon>
+    <EmbeddedResource Include="FKhoa.resx">
+      <DependentUpon>FKhoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FLogin.resx">
       <DependentUpon>FLogin.cs</DependentUpon>
@@ -162,11 +246,20 @@
     <EmbeddedResource Include="Fmain.resx">
       <DependentUpon>Fmain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FNghiemThu.resx">
+      <DependentUpon>FNghiemThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetai.resx">
+      <DependentUpon>FormDetai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRegister.resx">
       <DependentUpon>FRegister.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FSinhvien.resx">
       <DependentUpon>FSinhvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTimKiem.resx">
+      <DependentUpon>FTimKiem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -178,6 +271,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportNT.resx">
+      <DependentUpon>ReportNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPNghiemthu.resx">
+      <DependentUpon>RPNghiemthu.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -269,6 +368,61 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLDTDataSet7.xsc">
+      <DependentUpon>QLDTDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLDTDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLDTDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLDTDataSet7.xss">
+      <DependentUpon>QLDTDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLNCKHDataSet.xsc">
+      <DependentUpon>QLNCKHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLNCKHDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNCKHDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNCKHDataSet.xss">
+      <DependentUpon>QLNCKHDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLNCKHDataSet1.xsc">
+      <DependentUpon>QLNCKHDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLNCKHDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNCKHDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNCKHDataSet1.xss">
+      <DependentUpon>QLNCKHDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLNCKHDataSet2.xsc">
+      <DependentUpon>QLNCKHDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLNCKHDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNCKHDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNCKHDataSet2.xss">
+      <DependentUpon>QLNCKHDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLNCKHDataSet3.xsc">
+      <DependentUpon>QLNCKHDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLNCKHDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLNCKHDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLNCKHDataSet3.xss">
+      <DependentUpon>QLNCKHDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Resources\add-icon--ikons-icons--softiconsm-5.png" />
   </ItemGroup>
   <ItemGroup>
@@ -285,6 +439,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{0806c36c-11e4-475f-a338-d5b1295eaf2c}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{14916e70-bff9-4bcf-8bf5-c49b534cc5a8}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace QLNCKH
 {
-    public partial class fKhoa : Form
+    public partial class FKhoa : Form
     {
-        public fKhoa()
+        public FKhoa()
         {
             InitializeComponent();
         }
@@ -56,8 +56,10 @@ namespace QLNCKH
 
         private void fKhoa_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qLNCKHDataSet.Khoa' table. You can move, or remove it, as needed.
+            this.khoaTableAdapter1.Fill(this.qLNCKHDataSet.Khoa);
             // TODO: This line of code loads data into the 'qLDTDataSet.Khoa' table. You can move, or remove it, as needed.
-            this.khoaTableAdapter.Fill(this.qLDTDataSet.Khoa);
+           
             
         }
 

@@ -23,7 +23,10 @@ namespace QLNCKH
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (quyen!="admin")
+            {
+                Menuchinh.Items[1].Enabled = false;
+            }
         }
 
         private void tạoUserToolStripMenuItem_Click(object sender, EventArgs e)
@@ -41,7 +44,8 @@ namespace QLNCKH
 
         private void tìmKiếmToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FTimKiem f = new FTimKiem();
+            f.ShowDialog();
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,7 +60,7 @@ namespace QLNCKH
 
         private void danhMụcKhoaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            fKhoa f = new fKhoa();
+            FKhoa f = new FKhoa();
             f.ShowDialog();
         }
 
@@ -98,7 +102,27 @@ namespace QLNCKH
 
         private void danhMụcĐềTàiToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            FormDetai f = new FormDetai();
+            f.ShowDialog();
+        }
 
+        private void kếtQuảNghiệmThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FNghiemThu f = new FNghiemThu();
+            f.ShowDialog();
+        }
+
+        private void kếtQuảNgiệmThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RPNghiemthu f = new RPNghiemthu();
+            f.ShowDialog();
+            
+        }
+
+        private void cậpNhậtTiếnĐộToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FCapNhatTienDo f = new FCapNhatTienDo();
+            f.ShowDialog();
         }
     }
 }

@@ -42,5 +42,16 @@ namespace QLNCKH.Properties {
                 return ((string)(this["QLDTConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-BD23O87\\SQLEXPRESS;Initial Catalog=QLNCKH;Integrated Security" +
+            "=True")]
+        public string QLNCKHConnectionString {
+            get {
+                return ((string)(this["QLNCKHConnectionString"]));
+            }
+        }
     }
 }

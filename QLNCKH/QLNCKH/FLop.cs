@@ -48,8 +48,10 @@ namespace QLNCKH
 
         private void FLop_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qLNCKHDataSet1.Khoa' table. You can move, or remove it, as needed.
+            this.khoaTableAdapter.Fill(this.qLNCKHDataSet1.Khoa);
             // TODO: This line of code loads data into the 'qLDTDataSet1.Lop' table. You can move, or remove it, as needed.
-            this.lopTableAdapter.Fill(this.qLDTDataSet1.Lop);
+
 
         }
 
