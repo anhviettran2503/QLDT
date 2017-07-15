@@ -60,29 +60,11 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DB.cs" />
-    <Compile Include="FCapNhatTienDo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FCapNhatTienDo.Designer.cs">
-      <DependentUpon>FCapNhatTienDo.cs</DependentUpon>
-    </Compile>
     <Compile Include="FChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FChangePass.Designer.cs">
       <DependentUpon>FChangePass.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Fdetai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fdetai.Designer.cs">
-      <DependentUpon>Fdetai.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Fgiangvien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fgiangvien.Designer.cs">
-      <DependentUpon>Fgiangvien.cs</DependentUpon>
     </Compile>
     <Compile Include="FKhoa.cs">
       <SubType>Form</SubType>
@@ -107,12 +89,6 @@
     </Compile>
     <Compile Include="Fmain.Designer.cs">
       <DependentUpon>Fmain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FNghiemThu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FNghiemThu.Designer.cs">
-      <DependentUpon>FNghiemThu.cs</DependentUpon>
     </Compile>
     <Compile Include="FormDetai.cs">
       <SubType>Form</SubType>
@@ -222,17 +198,8 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="FCapNhatTienDo.resx">
-      <DependentUpon>FCapNhatTienDo.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FChangePass.resx">
       <DependentUpon>FChangePass.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Fdetai.resx">
-      <DependentUpon>Fdetai.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Fgiangvien.resx">
-      <DependentUpon>Fgiangvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FKhoa.resx">
       <DependentUpon>FKhoa.cs</DependentUpon>
@@ -245,9 +212,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fmain.resx">
       <DependentUpon>Fmain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FNghiemThu.resx">
-      <DependentUpon>FNghiemThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormDetai.resx">
       <DependentUpon>FormDetai.cs</DependentUpon>

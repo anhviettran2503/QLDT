@@ -2,15 +2,11 @@ C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\bin\Debug\QLNCKH.exe.config
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.exe
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.pdb
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\GUI.csprojResolveAssemblyReference.cache
-C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FCapNhatTienDo.resources
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FChangePass.resources
-C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.Fdetai.resources
-C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.Fgiangvien.resources
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FKhoa.resources
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FLogin.resources
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FLop.resources
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.Fmain.resources
-C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FNghiemThu.resources
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FormDetai.resources
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FRegister.resources
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\obj\Debug\QLNCKH.FSinhvien.resources

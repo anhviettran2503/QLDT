@@ -78,8 +78,7 @@ namespace QLNCKH
 
         private void danhMụcGiảngViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Fgiangvien f = new Fgiangvien();
-            f.ShowDialog();
+            
         }
 
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
@@ -108,8 +107,7 @@ namespace QLNCKH
 
         private void kếtQuảNghiệmThuToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FNghiemThu f = new FNghiemThu();
-            f.ShowDialog();
+           
         }
 
         private void kếtQuảNgiệmThuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -121,8 +119,6 @@ namespace QLNCKH
 
         private void cậpNhậtTiếnĐộToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FCapNhatTienDo f = new FCapNhatTienDo();
-            f.ShowDialog();
         }
     }
 }

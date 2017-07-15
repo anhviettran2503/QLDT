@@ -45,7 +45,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(348, 60);
+            this.label1.Location = new System.Drawing.Point(184, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(266, 31);
             this.label1.TabIndex = 0;
@@ -54,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(225, 170);
+            this.label2.Location = new System.Drawing.Point(129, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 21);
             this.label2.TabIndex = 1;
@@ -63,7 +63,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(225, 202);
+            this.label3.Location = new System.Drawing.Point(129, 125);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 21);
             this.label3.TabIndex = 1;
@@ -72,7 +72,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(225, 235);
+            this.label4.Location = new System.Drawing.Point(129, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 21);
             this.label4.TabIndex = 1;
@@ -81,7 +81,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(225, 272);
+            this.label5.Location = new System.Drawing.Point(129, 195);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(59, 21);
             this.label5.TabIndex = 1;
@@ -89,21 +89,21 @@
             // 
             // txt_Mauser
             // 
-            this.txt_Mauser.Location = new System.Drawing.Point(354, 162);
+            this.txt_Mauser.Location = new System.Drawing.Point(258, 85);
             this.txt_Mauser.Name = "txt_Mauser";
             this.txt_Mauser.Size = new System.Drawing.Size(224, 29);
             this.txt_Mauser.TabIndex = 1;
             // 
             // txt_Tenuser
             // 
-            this.txt_Tenuser.Location = new System.Drawing.Point(354, 194);
+            this.txt_Tenuser.Location = new System.Drawing.Point(258, 117);
             this.txt_Tenuser.Name = "txt_Tenuser";
             this.txt_Tenuser.Size = new System.Drawing.Size(224, 29);
             this.txt_Tenuser.TabIndex = 2;
             // 
             // txt_Password
             // 
-            this.txt_Password.Location = new System.Drawing.Point(354, 227);
+            this.txt_Password.Location = new System.Drawing.Point(258, 150);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(224, 29);
@@ -111,7 +111,7 @@
             // 
             // btnOK
             // 
-            this.btnOK.Location = new System.Drawing.Point(229, 332);
+            this.btnOK.Location = new System.Drawing.Point(133, 255);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(140, 60);
             this.btnOK.TabIndex = 5;
@@ -121,7 +121,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(438, 332);
+            this.btnCancel.Location = new System.Drawing.Point(342, 255);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(140, 60);
             this.btnCancel.TabIndex = 6;
@@ -136,7 +136,7 @@
             "Admin\t",
             "Guest",
             "Root"});
-            this.cbt_quyen.Location = new System.Drawing.Point(354, 264);
+            this.cbt_quyen.Location = new System.Drawing.Point(258, 187);
             this.cbt_quyen.Name = "cbt_quyen";
             this.cbt_quyen.Size = new System.Drawing.Size(224, 29);
             this.cbt_quyen.TabIndex = 4;
@@ -146,7 +146,7 @@
             this.AcceptButton = this.btnOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 561);
+            this.ClientSize = new System.Drawing.Size(609, 399);
             this.Controls.Add(this.cbt_quyen);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnOK);
