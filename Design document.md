@@ -1,4 +1,4 @@
-# TÀI LIỆU DÀNH CHO NHÀ PHÁT TRIỂN
+# TÀI LIỆU THIẾT KẾ
 
 ## 1.Phân tích chức năng
 
