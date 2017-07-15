@@ -42,7 +42,7 @@ Gồm các chức năng :
 
 ## Danh sách lỗi (Issues)
 
-Xem tại [Đây]
+Bạn có thể xem và đóng góp cho tôi tại [Đây](https://github.com/anhviettran2503/QLDT/issues)
 
 ## Cách lấy và đóng góp mã nguồn (Get and contribute source code)
 
@@ -54,6 +54,8 @@ Chỉnh sửa xong thì ấn nút Pull Request để gửi yêu cầu đóng gó
 
 Tôi sẽ kiểm tra và phê duyệt các đóng góp này. Nếu đóng góp chưa đạt hoặc cần chỉnh sửa thì tôi sẽ viết góp ý ngay tại yêu cầu đóng góp và trả lại để người đóng góp chỉnh sửa và gửi lại sau khi đã sửa xong. Quá trình này diễn ra cho đến khi yêu cầu đóng góp được chấp nhận, đóng góp đó sẽ được trộn (merge) vào các nhánh phù hợp với dự án được đóng góp.
 Để tăng hiệu suất quản lý, toàn bộ công việc chỉnh sửa, xử lý xung đột... trước khi gửi đóng góp lên sẽ do người đóng góp xử lý. Tôi sẽ chỉ việc kiểm tra và trả lời chứ không phải mất công để sửa lại code được đóng góp.
+
+Hoặc bạn có thể đóng góp cho tôi tại [đây](https://github.com/anhviettran2503/QLDT/issues)
 
 Hoặc bạn có thể liên hệ với tôi thông qua email: anhvietk3y@gmail.com
 
