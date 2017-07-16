@@ -34,7 +34,7 @@ Gồm các chức năng :
 
 ## Tài liệu cho nhà phát triển (Documentation for development)
 
-Đọc tại [Đây]
+Đọc tại [Đây](https://github.com/anhviettran2503/QLDT/blob/master/Documentation%20for%20developers.md)
 
 ## Tài liệu thiết kế (Design Documentation)
 
