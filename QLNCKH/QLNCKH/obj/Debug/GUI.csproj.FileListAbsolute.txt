@@ -42,3 +42,6 @@ C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\bin\Debug\stdole.dll
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\bin\Debug\BLL.pdb
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\bin\Debug\DTO.pdb
 C:\Users\asus\Desktop\Github\QLNCKH\QLNCKH\bin\Debug\DAL.pdb
+E:\QLDT\QLNCKH\QLNCKH\bin\Debug\QLNCKH.exe.config
+E:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.exe
+E:\QLDT\QLNCKH\QLNCKH\obj\Debug\QLNCKH.pdb

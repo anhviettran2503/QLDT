@@ -27,9 +27,10 @@ namespace QLNCKH
             //Tên Khoa
             //Tên Lớp
             //Tên Đề Tài
+            //Tạo đối tượng conn
             conn = DB.GetDBConnection();
             try
-            {
+            {   //Chuẩn hóa dữ liệu
                 conn.Open();
                 string a = cbtruongtimkiem.Text;
                 string truyvan = txttukhoa.Text;
@@ -63,6 +64,7 @@ namespace QLNCKH
                     timkiem = "Detai";
                     dk = "tendetai";
                 };
+                //Tạo đối tượng da thực hiện lấy bảng dữ liệu từ sql 
                 string sql = "select * from "+timkiem+" where "+dk+" like '%"+truyvan+"'";
                 da = new SqlDataAdapter(sql, conn);
                 DataTable tb = new DataTable();
@@ -77,6 +79,11 @@ namespace QLNCKH
             {
                 conn.Close();
             }
+        }
+
+        private void FTimKiem_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

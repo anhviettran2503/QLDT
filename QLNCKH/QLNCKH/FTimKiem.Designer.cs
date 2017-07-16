@@ -99,6 +99,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FTimKiem";
             this.Text = "FTimKiem";
+            this.Load += new System.EventHandler(this.FTimKiem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

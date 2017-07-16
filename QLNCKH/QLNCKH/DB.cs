@@ -12,7 +12,7 @@ namespace QLNCKH
     {
 
         public static SqlConnection GetDBConnection()
-        {
+        {   //Chứa chuỗi kết nối
             string datasource = @"DESKTOP-BD23O87\SQLEXPRESS";
             string database = "QLNCKH";
             string connString = @"Data Source=" + datasource + ";Initial Catalog=" + database +"; Integrated Security = True";

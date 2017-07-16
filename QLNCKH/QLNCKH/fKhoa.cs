@@ -24,7 +24,7 @@ namespace QLNCKH
         }
 
         private void btnthem_Click(object sender, EventArgs e)
-        {
+        {   //Tạo đối tượng conn
             SqlConnection conn = DB.GetDBConnection();
             string makhoa = txtmakhoa.Text;
             string tenkhoa = txttenkhoa.Text;
@@ -33,6 +33,7 @@ namespace QLNCKH
             try
             {
                 conn.Open();
+                //Tạo đối tượng cmd thao tác với sql thông qua Store Procedure
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "SP_Khoa_Insert";
@@ -64,7 +65,7 @@ namespace QLNCKH
         }
 
         private void btnxoa_Click(object sender, EventArgs e)
-        {
+        {   //Giống như button thêm
             string makhoa = txtmakhoa.Text;
             SqlConnection conn = DB.GetDBConnection();
             try
@@ -90,7 +91,7 @@ namespace QLNCKH
         }
 
         private void btnsua_Click(object sender, EventArgs e)
-        {
+        {   //Giống như button thêm
             SqlConnection conn = DB.GetDBConnection();
             string makhoa = txtmakhoa.Text;
             string tenkhoa = txttenkhoa.Text;
@@ -122,7 +123,7 @@ namespace QLNCKH
         }
 
         private void btnhuy_Click(object sender, EventArgs e)
-        {
+        {   //Set rỗng cho các trường nhập vào và set vị trí con trỏ
             txtmakhoa.Text = "";
             txtsdtkhoa.Text = "";
             txttenkhoa.Text = "";

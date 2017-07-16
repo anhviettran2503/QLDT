@@ -18,13 +18,13 @@ namespace QLNCKH
         }
 
         private void btnthem_Click(object sender, EventArgs e)
-        {
+        {   //Tạo đối tượng conn
             SqlConnection conn = DB.GetDBConnection();
             string malop = txtmalop.Text;
             string tenlop = txttenlop.Text;
             string makhoa = cbmakhoa.Text;
             try
-            {
+            {   //Tạo đối tượng cmd thao tác với sql thông qua store procedure
                 conn.Open();
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
@@ -56,7 +56,7 @@ namespace QLNCKH
         }
 
         private void btnxoa_Click(object sender, EventArgs e)
-        {
+        {   //Giống với button thêm
             string malop = txtmalop.Text;
             SqlConnection conn = DB.GetDBConnection();
             try
@@ -81,7 +81,7 @@ namespace QLNCKH
         }
 
         private void btnsua_Click(object sender, EventArgs e)
-        {
+        {   //Giống với button thêm
             SqlConnection conn = DB.GetDBConnection();
             string malop = txtmalop.Text;
             string tenlop = txttenlop.Text;
@@ -110,7 +110,7 @@ namespace QLNCKH
         }
 
         private void btnhuy_Click(object sender, EventArgs e)
-        {
+        {   //Set giá trị rỗng cho các textfield và set vị trí cho con trỏ
             txtmalop.Text = "";
             txttenlop.Text = "";
             cbmakhoa.Text = "";

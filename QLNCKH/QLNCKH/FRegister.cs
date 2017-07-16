@@ -18,12 +18,13 @@ namespace QLNCKH
         }
 
         private void btnOK_Click(object sender, EventArgs e)
-        {
+        {   //Tạo đối tượng conn 
             SqlConnection conn = DB.GetDBConnection();
             string mauser = txt_Mauser.Text;
             string user = txt_Tenuser.Text;
             string pass = txt_Password.Text;
             string quyen = cbt_quyen.Text;
+            //Kiểm tra các trường đã được nhập đầy đủ chưa
             if (mauser == "" || user == "" || pass=="" || quyen=="")
             {
                 MessageBox.Show("Hãy nhập đầy đủ các thông tin");
@@ -32,6 +33,7 @@ namespace QLNCKH
                 try
                 {
                     conn.Open();
+                    //Tạo đối tượng cmd thao tác thêm dữ liệu vào sql
                     string sql = "insert into Userr values('" + mauser + "','" + user + "','" + pass + "','" + quyen + "')";
                     SqlCommand cmd = new SqlCommand(sql,conn);
                     cmd.ExecuteNonQuery();
@@ -49,7 +51,7 @@ namespace QLNCKH
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
-        {
+        {   //Set giá trị rỗng cho các textfield
             txt_Mauser.Text = "";
             txt_Password.Text = "";
             txt_Tenuser.Text = "";

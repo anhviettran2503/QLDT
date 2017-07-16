@@ -15,14 +15,14 @@ namespace QLNCKH
         public string quyen;
         public string name;
         public Fmain(string quyen,string name)
-        {
+        {   //Truyền quyen và name vào 
             InitializeComponent();
             this.quyen = quyen;
             this.name = name;
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {   //Điều kiện phân quyền
             if (quyen!="admin")
             {
                 Menuchinh.Items[1].Enabled = false;
@@ -31,25 +31,25 @@ namespace QLNCKH
 
         private void tạoUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            //Mở form đăng ký
             FRegister f = new FRegister();
             f.ShowDialog();
         }
 
         private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {   //Mở form đổi mật khẩu
             FChangePass f = new FChangePass(this.name);
             f.ShowDialog();
         }
 
         private void tìmKiếmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {   //Mở form tìm kiếm
             FTimKiem f = new FTimKiem();
             f.ShowDialog();
         }
 
         private void thoátToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {   //Cảnh báo thoát
             DialogResult drl = MessageBox.Show("Bạn muốn thoát chương trình ?", "Cảnh báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (drl== DialogResult.Yes)
             {

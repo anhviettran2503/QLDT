@@ -23,8 +23,7 @@ namespace QLNCKH
             this.lopTableAdapter2.Fill(this.qLNCKHDataSet3.Lop);
             // TODO: This line of code loads data into the 'qLNCKHDataSet2.Sinhvien' table. You can move, or remove it, as needed.
             this.sinhvienTableAdapter2.Fill(this.qLNCKHDataSet2.Sinhvien);
-          
-            
+            //Định dạng cho bảng dữ liệu
             rbnam.Checked = true;
             txtngaysinh.Value = new DateTime(1990, 01, 01);
             datatable.AutoResizeColumns();
@@ -39,7 +38,7 @@ namespace QLNCKH
         }
 
         private void btnthem_Click(object sender, EventArgs e)
-        {
+        {   //Tạo đối tượng conn
             SqlConnection conn = DB.GetDBConnection();
             string malop = cbmalop.Text;
             string masv = txtmasv.Text;
@@ -54,7 +53,7 @@ namespace QLNCKH
             string email = txtemail.Text;
           
             try
-            {
+            {   //Tạo đối tượng cmd thao tác thêm vào sql trực tiếp
                 conn.Open();
                 string sql = "insert into Sinhvien  values ('"+masv+"',N'"+hoten+"','"+malop+"','"+ngaysinh+"',N'"+dantoc+"','"+sdt+"',"+gioitinh+",'"+tenuser+"',N'"+diachi+"','"+email+"');";
                 SqlCommand cmd = new SqlCommand(sql, conn);
@@ -77,7 +76,7 @@ namespace QLNCKH
             SqlConnection conn = DB.GetDBConnection();
             string masv = txtmasv.Text;
             try
-            {
+            {   //Tạo đối tượng cmd thao tác xóa trong sql trực tiếp
                 conn.Open();
                 string sql = "delete from Sinhvien where masv='"+masv+"'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
@@ -111,7 +110,7 @@ namespace QLNCKH
             string email = txtemail.Text;
 
             try
-            {
+            {   //Tạo đối tượng cmd thao tác sửa trong sql trực tiếp
                 conn.Open();
                 string sql = "update  Sinhvien set malop='"+malop+"',tensv=N'"+hoten+"',ngaysinh='"+ngaysinh+"',gioitinh="+gioitinh+",dantoc=N'"+dantoc+"',sodtsv='"+sdt+"',tentk='"+tenuser+"',diachi=N'"+diachi+"',email='"+email+"' where masv='"+masv+"'";
                 SqlCommand cmd = new SqlCommand(sql, conn);
@@ -132,7 +131,7 @@ namespace QLNCKH
 
         int index;
         private void datatable_Click(object sender, EventArgs e)
-        {
+        {   //Hiển thị thông tin từ bảng lên các textfield
             index = datatable.CurrentRow.Index;
             txtmasv.Text = datatable.Rows[index].Cells[0].Value.ToString();
             txthoten.Text = datatable.Rows[index].Cells[1].Value.ToString();
