@@ -65,7 +65,7 @@ Hoặc bạn có thể liên hệ với tôi thông qua email: anhvietk3y@gmail.
 
 ## Tin tức và bản cập nhật mới nhất của phần mềm
 
-[Link](https://www.facebook.com/permalink.php?story_fbid=1939480783008282&id=1939284963027864)
+[Link](https://www.facebook.com/permalink.php?story_fbid=1939547843001576&id=1939284963027864)
 
 ---
 
