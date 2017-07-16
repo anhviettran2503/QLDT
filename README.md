@@ -46,7 +46,7 @@ Bạn có thể xem và đóng góp cho tôi tại [Đây](https://github.com/an
 
 ## Cách lấy và đóng góp mã nguồn (Get and contribute source code)
 
-Nhấn vào [đây](https://github.com/anhviettran2503/QLDT.git) để tải xuống mã nguồn
+Nhấn vào [đây](https://codeload.github.com/anhviettran2503/QLDT/zip/master) để tải xuống mã nguồn
 
 Để tham gia phát triển code, chỉ cần 1 tài khoản trên Github. Sau đó truy cập kho code của tôi, ấn nút Fork để copy project có sẵn thành project của mình, rồi sau đó bạn có thể tự do chỉnh sửa project đó của mình.
 
