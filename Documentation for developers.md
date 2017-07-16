@@ -153,3 +153,207 @@ namespace QLNCKH
 }
 
 ## Xử lý theo mô hình 3 layer: 
+
+Bạn sẽ cần phải tạo 1 form ở GUI, 1 file cs ở BLL để xử lý tính toán, 1 file cs ở DAL để xử lý với database. Nếu cần đóng gói dữ liệu, hãy tạo 1 file cs ở DTO
+
++Bước 1:Tạo form ở GUI
+
+<img src="http://i.imgur.com/Ya3Qezv.png">
+
++Bước 2 (Nếu cần): Tạo file cs ở DTO
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DTO
+{   //DTO dùng để đóng gói và chuyển dữ liệu
+    public class Detai
+    {   //Khai báo các biến và getter setter cho nó
+        private string _madetai;
+
+        public string madetai
+        {
+            get { return _madetai; }
+            set { _madetai = value; }
+        }
+        private string _tendetai;
+
+        public string tendetai
+        {
+            get { return _tendetai; }
+            set { _tendetai = value; }
+        }
+        private string _nguoihd;
+
+        public string nguoihd
+        {
+            get { return _nguoihd; }
+            set { _nguoihd = value; }
+        }
+        private string _thoigiandk;
+
+        public string thoigiandk
+        {
+            get { return _thoigiandk; }
+            set { _thoigiandk = value; }
+        }
+        //Hàm khởi tạo cho class detai
+        public Detai(string pMadetai, string pTendetai,string pNguoihd, string pThoigiandk)
+        {
+            this._madetai = pMadetai;
+            this._tendetai = pTendetai;
+            this._nguoihd = pNguoihd;
+            this._thoigiandk = pThoigiandk;
+
+        }
+    }
+}
+
+
++Bước 3: Tạo file cs ở DAL, cần add References DTO
+
+using System;
+
+using System.Collections.Generic;
+
+using System.Data;
+
+using System.Linq;
+
+using System.Text;
+
+using System.Threading.Tasks;
+
+using System.Data.SqlClient;
+
+using DTO;
+
+namespace DAL
+{   //Dùng để xử lí với sql 
+    //Cần kế thừa DBConnect để có SQLConnection
+    public class DAL_Detai : DBConnect 
+    {   //Hàm lấy danh sách đề tài
+        public DataTable GetDS()
+        {
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter("Select * from Detai",conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                return dt;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        DataTable dt = new DataTable();
+        public DAL_Detai()
+        {
+            dt = GetDS();
+            dt.PrimaryKey = new DataColumn[] { dt.Columns[0] }; 
+        }
+        //Hàm thêm đề tài
+        public bool Insert(Detai pdetai)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("INSERT INTO Detai VALUES('"+pdetai.madetai+"','"+pdetai.tendetai+"','"+pdetai.nguoihd+"','"+pdetai.thoigiandk+"')", conn);
+                cmd.ExecuteNonQuery();
+              
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                
+                conn.Close();
+            }
+            return true;
+        }
+        //Hàm xóa đề tài
+        public bool Delete(Detai pdetai)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("DELETE Detai WHERE madetai='"+pdetai.madetai+"'", conn);
+                cmd.ExecuteNonQuery();
+                
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                
+                conn.Close();
+            }
+            return true;
+        }
+        //Hàm sửa nội dungđề tài
+        public bool Update(Detai pdetai)
+        {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("UPDATE Detai SET tendetai='" + pdetai.tendetai + "',nguoihd='" + pdetai.nguoihd + "',thoigiandk='" + pdetai.thoigiandk + "' WHERE madetai='" + pdetai.madetai + "'", conn);
+                cmd.ExecuteNonQuery();
+                
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                
+                conn.Close();
+            }
+            return true;
+        }
+    }
+}
+
++Bước 4: Tạo file cs ở BLL. Lưu ý : cần add References DTO và DAL
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using DAL;
+using DTO;
+using System.Data;
+
+namespace BLL
+{   
+    public class BLL_Detai
+    {   //Tạo đối tượng dal_detai để gọi xuống DAL_Detai
+        DAL_Detai dal_detai = new DAL_Detai();
+        public bool Insert(Detai pdetai)
+        {   //Trả về giá trị true nếu thành công hoặc false nếu thất bại
+            return dal_detai.Insert(pdetai);
+        }
+        public bool Delete(Detai pdetai)
+        {//Trả về giá trị true nếu thành công hoặc false nếu thất bại
+            return dal_detai.Delete(pdetai);
+        }
+        public bool Update(Detai pdetai)
+        {//Trả về giá trị true nếu thành công hoặc false nếu thất bại
+            return dal_detai.Update(pdetai);
+        }
+        public DataTable GetDS()
+        {//Trả về bảng dữ liệu đề tài
+            return dal_detai.GetDS();
+        }
+    }
+}
+
